@@ -208,7 +208,6 @@
 	})
   
 	$('#start').click(function() {
-        currentCount = 0;
 		if (first_time) {
 			first_time = false;
             currentCount = parseInt($('#number-start').val())
@@ -238,7 +237,7 @@
 					codeReader.reset();
 					currentCount++;
 					updateCount()
-					audi("/files/ping1.mp3");
+					audi("/data/ping1.mp3");
 					setTimeout(() => {
 						startScan();
 					}, 1000)
